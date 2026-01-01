@@ -1,1 +1,26 @@
+hardware:
+  display:
+    type: "SSD1306"
+    interface: "I2C"
+    address: 0x3C
+    width: 128
+    height: 64
+  
+  keyboard:
+    type: "matrix"
+    rows: 5
+    columns: 4
+    debounce_time: 0.02
+    pins:
+      rows: [17, 27, 22, 23, 24]
+      columns: [5, 6, 13, 19]
 
+calculator:
+  precision: 10
+  angle_mode: "RAD"
+  history_size: 50
+  
+display:
+  font_size: 12
+  theme: "dark"
+  show_battery: true
